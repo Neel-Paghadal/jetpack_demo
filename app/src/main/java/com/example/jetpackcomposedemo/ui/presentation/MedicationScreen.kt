@@ -1,4 +1,4 @@
-package com.example.jetpackcomposedemo
+package com.example.jetpackcomposedemo.ui.presentation
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
@@ -16,6 +16,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavHostController
+import com.example.jetpackcomposedemo.mvvm.MedicationViewModel
 import com.example.jetpackcomposedemo.ui.model.AssociatedDrug
 import com.example.jetpackcomposedemo.ui.model.AssociatedDrug2
 import java.util.*

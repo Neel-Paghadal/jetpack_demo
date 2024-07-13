@@ -1,5 +1,6 @@
-package com.example.jetpackcomposedemo
+package com.example.jetpackcomposedemo.mvvm
 
+import com.example.jetpackcomposedemo.di.network.ApiService
 import com.example.jetpackcomposedemo.ui.model.MedicleResponse
 import javax.inject.Inject
 

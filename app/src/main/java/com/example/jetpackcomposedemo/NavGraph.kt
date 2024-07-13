@@ -7,7 +7,9 @@ import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
-import com.example.jetpackcomposedemo.db.DashboardActivity
+import com.example.jetpackcomposedemo.ui.presentation.LoginScreen
+import com.example.jetpackcomposedemo.ui.presentation.MedicationDetailScreen
+import com.example.jetpackcomposedemo.ui.presentation.MedicationScreen
 
 @Composable
 fun NavGraph(

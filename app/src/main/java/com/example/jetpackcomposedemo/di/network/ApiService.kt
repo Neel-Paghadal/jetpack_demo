@@ -1,9 +1,10 @@
-package com.example.jetpackcomposedemo
+package com.example.jetpackcomposedemo.di.network
 
 import com.example.jetpackcomposedemo.ui.model.MedicleResponse
+import com.example.jetpackcomposedemo.ui.theme.GET_DATA
 import retrofit2.http.GET
 
 interface ApiService {
-    @GET("v3/2e34d6d2-53a4-44c1-a5b2-ea7ee202f35e")
+    @GET(GET_DATA)
     suspend fun getMedications(): MedicleResponse/*MedicationResponse*/
 }

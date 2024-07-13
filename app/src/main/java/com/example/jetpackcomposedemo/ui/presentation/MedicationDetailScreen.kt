@@ -1,4 +1,4 @@
-package com.example.jetpackcomposedemo
+package com.example.jetpackcomposedemo.ui.presentation
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize

@@ -1,7 +1,6 @@
-package com.example.jetpackcomposedemo
+package com.example.jetpackcomposedemo.mvvm
 
 import android.util.Log
-import android.widget.Toast
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.jetpackcomposedemo.ui.model.MedicleResponse

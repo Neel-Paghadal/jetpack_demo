@@ -1,6 +1,6 @@
-package com.example.jetpackcomposedemo
+package com.example.jetpackcomposedemo.di.network
 
-import com.squareup.moshi.Moshi
+import com.example.jetpackcomposedemo.ui.theme.URL
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -13,8 +13,7 @@ import javax.inject.Singleton
 @Module
 @InstallIn(SingletonComponent::class)
 object RetrofitModule {
-//    private val moshi = Moshi.Builder().build()
-    private const val BASE_URL = "https://run.mocky.io/"
+    private const val BASE_URL = URL
 
     @Singleton
     @Provides

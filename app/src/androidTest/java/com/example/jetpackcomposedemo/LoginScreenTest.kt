@@ -5,10 +5,9 @@ import androidx.compose.ui.test.junit4.createComposeRule
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
 import androidx.compose.ui.test.performTextInput
-import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import com.google.common.base.Verify.verify
+import com.example.jetpackcomposedemo.ui.presentation.LoginScreen
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith

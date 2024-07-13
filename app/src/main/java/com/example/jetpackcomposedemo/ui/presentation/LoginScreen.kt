@@ -1,4 +1,4 @@
-package com.example.jetpackcomposedemo
+package com.example.jetpackcomposedemo.ui.presentation
 
 import android.content.Intent
 import androidx.compose.foundation.layout.*
@@ -13,6 +13,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -45,6 +46,7 @@ fun LoginScreen(navController: NavHostController) {
 
         TextField(
             value = password,
+            visualTransformation =  PasswordVisualTransformation(),
             onValueChange = { password = it },
             label = { Text("password") }
         )
@@ -55,12 +57,10 @@ fun LoginScreen(navController: NavHostController) {
             backgroundColor = Color.DarkGray,
             contentColor = Color.White)
 
-        Spacer(modifier = Modifier.height(10.dp))
-
         CustomButton(text = "Room DB", onClick = {
             val intent = Intent(context, DashboardActivity::class.java)
             context.startActivity(intent)
-        }, backgroundColor = Color.LightGray, contentColor = Color.White)
+        }, backgroundColor = Color.Red, contentColor = Color.White)
 
     }
 }
@@ -78,7 +78,7 @@ fun CustomButton(
             backgroundColor = backgroundColor,
             contentColor = contentColor
         ),
-        modifier = Modifier.padding(16.dp)
+        modifier = Modifier.padding(start = 16.dp, end = 16.dp)
     ) {
         Text(text = text)
     }

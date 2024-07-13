@@ -31,6 +31,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.colorResource
@@ -242,10 +243,11 @@ class DashboardActivity() : ComponentActivity() {
                         modifier = Modifier
                             .fillMaxWidth()
                             .padding(top = 5.dp, bottom = 5.dp, start = 15.dp, end = 15.dp),
-                        backgroundColor = colorResource(id = R.color.purple_200),
-                        shape = RoundedCornerShape(16.dp),
+                        backgroundColor = colorResource(id = R.color.light_white),
+                        shape = RoundedCornerShape(8.dp),
                     ) {
-                        Box (Modifier.background(colorResource(id = R.color.purple_200))){
+                        Box (Modifier.shadow(elevation = 10.dp,
+                            shape = RoundedCornerShape(8.dp)).background(colorResource(id = R.color.light_white))){
                             Row(
                                 modifier = Modifier
                                     .fillMaxWidth()
